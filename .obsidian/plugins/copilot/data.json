@@ -158,7 +158,7 @@
       ]
     },
     {
-      "name": "qwen:14b",
+      "name": "qwen2.5:14b",
       "provider": "ollama",
       "enabled": true,
       "isBuiltIn": false,
@@ -167,7 +167,19 @@
       "isEmbeddingModel": false,
       "capabilities": [],
       "stream": true,
-      "displayName": "qwen14b"
+      "displayName": "qwen2.5"
+    },
+    {
+      "name": "qwen2.5:1.5b",
+      "provider": "ollama",
+      "enabled": true,
+      "isBuiltIn": false,
+      "baseUrl": "",
+      "apiKey": "",
+      "isEmbeddingModel": false,
+      "capabilities": [],
+      "stream": true,
+      "displayName": "qwen2.5:1.5b"
     }
   ],
   "activeEmbeddingModels": [
@@ -337,6 +349,12 @@
       "prompt": "<instruction>\n选中文档是从语雀导出的markdown格式，有些地方与obsidian不兼容，需要手动调整，请按照我给出的条件修复选中文档：\n1. 对于多行formula公式，原文档是$ 公式\\\\换行\\\\公式 $, 需要修改为$$ 公式多行内容 $$\n2. 对于单行公式，如$ \\text{ReLU}(x) = \\max(0, x) $，obsidian无法识别左$后，右$前带空格，需要调整为：$\\text{ReLU}(x) = \\max(0, x)$\n3. 所有带有背景颜色的文本，如**<font style=\"background-color:#FBDE28;\">函数组合</font>**， 需要在style里添加黑色，如果不给出颜色，obsidian会白天和夜间模式切换，影响显示，因此需要修改为**<font style=\"background-color:#FBDE28;color:black\">函数组合</font>**，另外<font></font>修饰的文本无法再加粗，因此应当去掉**， 最终为 <font style=\"background-color:#FBDE28;color:black\">函数组合</font>\n4. 修复其他明显语法错误\n5. 对于单独加颜色的文本， 去掉颜色修饰，如<font style=\"color:#0e0e0e;\">示例文本</font>， 去掉后 示例文本\n特别注意：你应当只返回修正后的文本内容，你的回答不应该包含其他任何内容\n</instruction>\n\n<text>{copilot-selection}</text>",
       "showInContextMenu": false,
       "modelKey": "deepseek-chat|deepseek"
+    },
+    {
+      "name": "Color",
+      "prompt": "<instruction>\n请对选中的文本上色；\n选中文本示例：示例文本-tomato\n上色后的示例： <font style=\"background-color:tomato; color:black\">示例文本</font>\n请遵守以下规则：\n1. 示例文本中的-tomato是颜色后缀，表示我指定了返回文本的背景颜色，你需要将这个颜色如tomato设置为style中的background-color， 颜色后缀是一个英文颜色单词，颜色单词是css中常用的有效颜色，如tomato, salmon, yellow, red, orange, skyblue, lightgreen, honeydew等\n2. color永远为black\n3. 当我没有指定-color颜色后缀时，需要你根据示例文本的特征，给出不一样的backgroud-color,  以下是颜色对应的文本特征：\n3.1 tomato 概念性专业知识，非常重要，作为知识点时应当被牢记\n3.2 yellow 常识性知识，作为任意普通本科生都应当具备的基本知识\n\n4. 永远只返回上色后的示例文本 不要返回其他任何内容\n5. 请记住不要修改示例文本的任何内容(颜色后缀除外)，你的工作只是给文本上色。\n正确的返回示例：\n<font style=\"background-color:tomato; color:black\">示例文本</font>\n错误的返回格式如下：\n- <style><font style=\"background-color:tomato; color:black\">示例文本</font></style> 在正确的返回内容外面加其他html标签\n- <font style=\"background-color:tomato; color:black\">示例文本-tomato</font> 没有去掉颜色后缀\n- <font style=\"background-color:tomato; color:black\">示例字样</font> 修改示例文本内容\n\n</instruction>\n\n<text>{copilot-selection}</text>",
+      "showInContextMenu": false,
+      "modelKey": "qwen2.5:1.5b|ollama"
     }
   ]
 }
