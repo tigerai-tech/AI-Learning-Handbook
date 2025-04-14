@@ -1,0 +1,205 @@
+{
+  "main": {
+    "id": "6a823f62b207d0b0",
+    "type": "split",
+    "children": [
+      {
+        "id": "23a7d0d1a6ace0b4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "12c7286ff07ca802",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3-DeepLearning/PyTorch - 1 入门基础.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "PyTorch - 1 入门基础"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "989fa3b213fec470",
+    "type": "split",
+    "children": [
+      {
+        "id": "b00fd101e00f11be",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "40e04f8cbdb1f2f7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "000821c21fb047c2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "8e5d81fc6b8170fa",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 288.5
+  },
+  "right": {
+    "id": "0e1756b3ee60238b",
+    "type": "split",
+    "children": [
+      {
+        "id": "b0ba2ddc990711d6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "047feed725748d2c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "3-DeepLearning/PyTorch - 1 入门基础.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "PyTorch - 1 入门基础 的反向链接列表"
+            }
+          },
+          {
+            "id": "a63f8c1d220429bc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "3-DeepLearning/PyTorch - 1 入门基础.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "PyTorch - 1 入门基础 的出链列表"
+            }
+          },
+          {
+            "id": "b07137a7d6c09304",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "e3045da1741fa3c9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "3-DeepLearning/PyTorch - 1 入门基础.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "PyTorch - 1 入门基础 的大纲"
+            }
+          },
+          {
+            "id": "57df933338ca1612",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 471.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "copilot:Open Copilot Chat": false
+    }
+  },
+  "active": "12c7286ff07ca802",
+  "lastOpenFiles": [
+    "2-MachineLearning/2.3 机器学习-下：特征工程.md",
+    "3-DeepLearning/PyTorch - 1 入门基础.md",
+    "2-MachineLearning/PyTorch - 1 入门基础.md",
+    "2-MachineLearning/2.1 人工智能和机器学习.md",
+    "2-MachineLearning/Tensorflow 入门实战 By Coursera 劳伦斯.md",
+    "3-DeepLearning/3.1 神经网络与多层感知机.md",
+    "2-MachineLearning/3.1 神经网络与多层感知机.md",
+    "2-MachineLearning/2.2 机器学习-上：监督与无监督.md",
+    "1-EssentialBasics/1.2 线性代数.md",
+    "1-EssentialBasics/1.1 高等数学.md",
+    "README.md",
+    "0-Preface/🕯️序.md",
+    "7-AI-Full-Stack",
+    "6-NLP",
+    "5-ComputerVison",
+    "4-IBM-AI-Engineer-Course",
+    "3-DeepLearning",
+    "2-MachineLearning",
+    "1-EssentialBasics",
+    "0-Preface"
+  ]
+}
