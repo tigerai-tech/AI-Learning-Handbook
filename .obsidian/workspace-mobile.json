@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1-EssentialBasics/1.2 线性代数.md",
+                "file": "2-MachineLearning/2.5 回归与分类.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1.2 线性代数"
+              "title": "2.5 回归与分类"
             }
           }
         ]
@@ -131,7 +131,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "1-EssentialBasics/1.2 线性代数.md",
+            "file": "2-MachineLearning/2.5 回归：Linear&Logic Regression.md",
             "followCursor": false,
             "showSearch": false,
             "searchQuery": ""
@@ -145,6 +145,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "copilot:Open Copilot Chat": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -155,8 +156,8 @@
   },
   "active": "fd1c9148b87c9711",
   "lastOpenFiles": [
-    "1-EssentialBasics/1.1 高等数学.md",
     "0-Preface/🕯️序.md",
-    "1-EssentialBasics/1.2 线性代数.md"
+    "1-EssentialBasics/1.2 线性代数.md",
+    "1-EssentialBasics/1.1 高等数学.md"
   ]
 }

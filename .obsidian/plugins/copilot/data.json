@@ -17,7 +17,7 @@
   "deepseekApiKey": "sk-fe9bd6f2f6434795bf54f9d1c9000fb1",
   "defaultChainType": "vault_qa",
   "defaultModelKey": "deepseek-chat|deepseek",
-  "embeddingModelKey": "nomic-embed-text:latest|ollama",
+  "embeddingModelKey": "BAAI/bge-m3|openai",
   "temperature": 0.1,
   "maxTokens": 1000,
   "contextTurns": 15,
@@ -158,28 +158,64 @@
       ]
     },
     {
-      "name": "qwen2.5:14b",
-      "provider": "ollama",
+      "name": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+      "provider": "openai",
       "enabled": true,
       "isBuiltIn": false,
-      "baseUrl": "",
-      "apiKey": "",
+      "baseUrl": "https://api.siliconflow.cn/v1",
+      "apiKey": "sk-cuhraazmgsewukjcectrbziixkiljwhnsdnlwbahalxjgvxw",
       "isEmbeddingModel": false,
       "capabilities": [],
       "stream": true,
-      "displayName": "qwen2.5"
+      "displayName": "DeepSeek-R1-7B"
     },
     {
-      "name": "qwen2.5:1.5b",
-      "provider": "ollama",
+      "name": "THUDM/GLM-Z1-9B-0414",
+      "provider": "3rd party (openai-format)",
       "enabled": true,
       "isBuiltIn": false,
-      "baseUrl": "",
-      "apiKey": "",
+      "baseUrl": "https://api.siliconflow.cn/v1",
+      "apiKey": "sk-cuhraazmgsewukjcectrbziixkiljwhnsdnlwbahalxjgvxw",
       "isEmbeddingModel": false,
       "capabilities": [],
       "stream": true,
-      "displayName": "qwen2.5:1.5b"
+      "displayName": "THUDM/GLM-Z1-9B-0414"
+    },
+    {
+      "name": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+      "provider": "3rd party (openai-format)",
+      "enabled": true,
+      "isBuiltIn": false,
+      "baseUrl": "https://api.siliconflow.cn/v1",
+      "apiKey": "sk-cuhraazmgsewukjcectrbziixkiljwhnsdnlwbahalxjgvxw",
+      "isEmbeddingModel": false,
+      "capabilities": [],
+      "stream": true,
+      "displayName": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
+    },
+    {
+      "name": "Qwen/Qwen2-1.5B-Instruct",
+      "provider": "3rd party (openai-format)",
+      "enabled": true,
+      "isBuiltIn": false,
+      "baseUrl": "https://api.siliconflow.cn/v1",
+      "apiKey": "sk-cuhraazmgsewukjcectrbziixkiljwhnsdnlwbahalxjgvxw",
+      "isEmbeddingModel": false,
+      "capabilities": [],
+      "stream": true,
+      "displayName": "Qwen/Qwen2-1.5B-Instruct"
+    },
+    {
+      "name": "Qwen/Qwen2.5-7B-Instruct",
+      "provider": "3rd party (openai-format)",
+      "enabled": true,
+      "isBuiltIn": false,
+      "baseUrl": "https://api.siliconflow.cn/v1",
+      "apiKey": "sk-cuhraazmgsewukjcectrbziixkiljwhnsdnlwbahalxjgvxw",
+      "isEmbeddingModel": false,
+      "capabilities": [],
+      "stream": true,
+      "displayName": "Qwen/Qwen2.5-7B-Instruct"
     }
   ],
   "activeEmbeddingModels": [
@@ -250,15 +286,15 @@
       "isEmbeddingModel": true
     },
     {
-      "name": "nomic-embed-text:latest",
-      "provider": "ollama",
+      "name": "BAAI/bge-m3",
+      "provider": "openai",
       "enabled": true,
       "isBuiltIn": false,
-      "baseUrl": "",
-      "apiKey": "",
+      "baseUrl": "https://api.siliconflow.cn/v1",
+      "apiKey": "sk-cuhraazmgsewukjcectrbziixkiljwhnsdnlwbahalxjgvxw",
       "isEmbeddingModel": true,
       "capabilities": [],
-      "displayName": "ollama-nomic-embed",
+      "displayName": "BAAI-bge-m3",
       "enableCors": true
     }
   ],
@@ -281,7 +317,7 @@
       "name": "Fix grammar and spelling",
       "prompt": "<instruction>Fix the grammar and spelling of the text below. Preserve all formatting, line breaks, and special characters. Do not add or remove any content. Return only the corrected text.</instruction>\n\n<text>{copilot-selection}</text>",
       "showInContextMenu": true,
-      "modelKey": "qwen:14b|ollama"
+      "modelKey": "THUDM/GLM-Z1-9B-0414|openai"
     },
     {
       "name": "Emojify",
@@ -352,9 +388,9 @@
     },
     {
       "name": "Color",
-      "prompt": "<instruction>\n请对选中的文本上色；\n选中文本示例：示例文本-tomato\n上色后的示例： <font style=\"background-color:tomato; color:black\">示例文本</font>\n请遵守以下规则：\n1. 示例文本中的-tomato是颜色后缀，表示我指定了返回文本的背景颜色，你需要将这个颜色如tomato设置为style中的background-color， 颜色后缀是一个英文颜色单词，颜色单词是css中常用的有效颜色，如tomato, salmon, yellow, red, orange, skyblue, lightgreen, honeydew等\n2. color永远为black\n3. 当我没有指定-color颜色后缀时，需要你根据示例文本的特征，给出不一样的backgroud-color,  以下是颜色对应的文本特征：\n3.1 tomato 概念性专业知识，非常重要，作为知识点时应当被牢记\n3.2 yellow 常识性知识，作为任意普通本科生都应当具备的基本知识\n\n4. 永远只返回上色后的示例文本 不要返回其他任何内容\n5. 请记住不要修改示例文本的任何内容(颜色后缀除外)，你的工作只是给文本上色。\n正确的返回示例：\n<font style=\"background-color:tomato; color:black\">示例文本</font>\n错误的返回格式如下：\n- <style><font style=\"background-color:tomato; color:black\">示例文本</font></style> 在正确的返回内容外面加其他html标签\n- <font style=\"background-color:tomato; color:black\">示例文本-tomato</font> 没有去掉颜色后缀\n- <font style=\"background-color:tomato; color:black\">示例字样</font> 修改示例文本内容\n\n</instruction>\n\n<text>{copilot-selection}</text>",
-      "showInContextMenu": false,
-      "modelKey": "qwen2.5:1.5b|ollama"
+      "prompt": "<instruction>\n请将选中的文本使用 HTML 标签进行高亮处理：\n- 使用 `<font style=\"background-color:yellow; color:black\">选中文本</font>` 格式；\n- 保留原始文本内容，仅添加高亮标记， 不要对选中文本(如 示例文本)做其他任何调整；\n- 只修改被选中的部分，不改动其他内容。\n- 输出内容包含空格和换行时，应当trim掉\n\n示例输入：示例文本  \n示例输出：<font style=\"background-color:yellow; color:black\">示例文本</font>\n</instruction>\n\n<text>{copilot-selection}</text>",
+      "showInContextMenu": true,
+      "modelKey": "Qwen/Qwen2.5-7B-Instruct|3rd party (openai-format)"
     }
   ]
 }
